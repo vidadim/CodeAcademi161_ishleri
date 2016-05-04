@@ -1,0 +1,58 @@
+@keyframes myAnim{
+	0%	{top:100px;
+		left:100px;
+		background: blue;
+	}
+
+	25%	{top:100px;
+		left:500px;
+		background: red;
+	}
+
+	50%	{top:500px;
+		left:500px;
+		background: green;
+		transform: scale(1.5);
+	}
+	75%	{top:500px;
+		left:100px;
+		background: yellow;
+	}
+	100%{top:100px;
+		left:100px;
+		background: black;
+	}
+}
+
+
+.main{
+	width:150px;
+	height:150px;
+	background: red;
+	position: absolute;
+	/*margin: 300px auto;*/
+	/*transition:all .5s ease-in-out;*/
+	top:100px;
+	left:100px;
+	animation:myAnim 5s 2 ;
+}
+
+/*.main:hover{
+	transform: rotate(90deg);
+	transform: skew(120deg);
+	transform: translate(100px,150px);
+	transform: scale(1.8, 2.8);
+	
+	transform-origin:left top;
+}
+*/
+
+
+/*input[type=text]:focus{
+transform: rotate(90deg);
+}
+
+input[type="password"]:hover{
+transform: translate(100px,150px);
+}*/
+

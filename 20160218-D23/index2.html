@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+
+<style type="text/css">
+img{
+width: 150px;
+height: 100px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<button onclick="addImage()">ADD</button>
+
+<button onclick="removeImage()">Remove</button>
+
+<script type="text/javascript">
+
+
+  var imageList=["img/sekil1.jpg","img/sekil2.jpg","img/sekil3.jpg","img/sekil4.jpg"];
+
+var k=0;
+
+function addImage(){
+   var br=document.createElement("br");
+
+   var images = document.createElement("img");
+   images.setAttribute("src", imageList[k]);
+
+   if(k%3==0){
+    document.body.appendChild(br);
+   }
+
+   document.body.appendChild(images);
+   k++;
+   if(k==imageList.length){
+    k=0;
+   } 
+}
+
+function removeImage () {
+   document.body.removeChild(document.body.childNodes[3]); 
+}
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,295 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>lesson18</title>
+    <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+  </head>
+
+
+<body>
+
+<script type="text/javascript">
+  
+
+//LOOP
+function for_dongusu() {
+  for(var i=1;i<=30;i++){
+    document.write(i +'<br/>');
+  }
+}
+
+// for_dongusu();
+
+function while_dongusu() {
+  var i=0;
+  while(i<30){
+    i++;
+    document.write(i+ '<br/>');
+  }
+}
+
+// while_dongusu();
+
+// for( i=0,j=0; i<200,j<100; i++,j++ ){
+
+//   document.write(i+ " " + j +"<hr>");
+
+//   if (j>=99){
+//         for( i; i<200 ; i++ ){
+//       document.write((i+1) +"<hr>");
+//   }
+
+//   }
+
+// }
+
+
+
+// function netice(a){
+
+   
+//    if(a<0){
+//       document.write("olmaz")
+//    }
+//    else if(a<50){
+//       document.write("kesildiniz")
+//    }
+//    else if(a<70) {
+//       document.write(" pis deyilsiniz")
+//    }
+
+//     else if(a<100) {
+//       document.write(" Eladir'")
+//    }
+//     else if(a>100) {
+//       document.write(" nagayrirsan eeee ucdunki ")
+//    }
+
+
+
+//  }
+// netice(0);
+
+/////////////////////////////////////////////////////////////////////////
+
+
+function netice(a){
+   
+   if(a<0){
+      document.write("olmaz")
+   }
+   else { 
+            if(a<50){
+                      document.write("kesildiniz")
+                    }
+     
+             else {
+                      if(a<70) {
+                                  document.write(" pis deyilsiniz")
+                                }
+                      else { 
+                              if(a<100) {
+                                document.write(" Eladir'")
+                                        }
+                               else { 
+
+                                if(a>100) {
+                                        document.write(" nagayrirsan eeee ucdunki ")
+                                          }
+                                    }
+                            }
+                 }
+            }
+      }
+
+
+netice(101);
+
+/////////////////////////////////////////////////////////////////////////
+
+a=0
+function netice(){
+                  
+                  if(a<501)
+                  {a++;
+                  document.write(a + "<hr>" );
+                    netice();}                    
+                  }
+
+
+netice();
+
+
+/////////////////////////////////////////////////////////////////////////
+
+a=1;
+function sadizm(){
+   if(a<501){
+      if(a%7==0){
+         document.write(a+"<hr>");
+      }
+   
+   a++;
+   sadizm();
+   }
+}
+sadizm();
+
+
+/////////////////////////////////////////////////////////////////////////
+
+var a=true;
+var x=0;
+var y=0;
+function lampa(){
+   if(a){
+      x++;
+      alert("x="+x);
+      a=false;
+   }else{
+      y++;
+      alert("y="+y);
+      a=true;
+   }
+}
+document.write('<button onclick="lampa()">Sondur/Yandır</button>');
+
+/////////////////////////////////////////////////////////////////////////
+
+ function yoxla(a){
+    if(a<0){
+      document.write("Düzgün deyer girin");
+    }else{
+      if(a<50){
+        document.write("Kesilmisiz");
+      }else{
+        if(a<70){
+          document.write("Yaxsıdır ay braddd");
+        }else{
+          if(a<=100){
+            document.write("Eladır");
+          }else{
+            document.write("Düzgün deyer girin");
+          }
+        }
+      }
+    }
+
+  }
+yoxla(65);
+
+/////////////////////////////////////////////////////////////////////////
+
+
+function yoxla2(b){
+   if(b<0){
+      document.write("Ged oppan");
+   }
+   if(b>0){
+      if(b<50){
+               document.write("Dedeye muraciet ele..");
+            }
+      if(b>50){
+         if(b<70){
+               document.write("pis deyil ay qa..");
+            }
+         if(b>70){
+            if(b<100){
+               document.write("Eladır yetimmm..");
+            }
+            if(b>100){
+               document.write("Sehv deyer girmisiz");
+            }
+         }
+      }
+   }
+}
+yoxla2(-50);
+
+
+/////////////////////////////////////////////////////////////////////////
+
+
+function veyaVe(a){
+    if(a<0||a>100){
+    document.write("bahoooo");
+            }
+ 
+    if(a>0&&a<50){ document.write("qaldin");  }
+
+    if (a>50 && a<=70) {  document.write("pis deyil");   }
+
+    if (a>70 && a<=100)  { document.write("ela");}
+    
+                          
+        
+}
+veyaVe(60);
+
+
+
+/////////////////////////////////////////////////////////////////////////
+
+
+for( i=0,j=0; i<200,j<100; i++,j++ ){
+
+  document.write(i+ " " + j +"<hr>");
+
+  if (j>=99){
+        for( i; i<200 ; i++ ){
+      document.write((i+1) +"<hr>");
+  }
+
+  }
+
+}
+
+
+
+/////////////////////////////////////////////////////////////////////////
+
+
+
+a=0
+for( i=0; i<101; i++){
+  
+  a=a+i;
+  // document.write(i + " " + a + "<hr>");
+  }
+   document.write(a);
+
+
+/////////////////////////////////////////////////////////////////////////
+
+   a=1
+for( i=1; i<101; i++){
+  
+  a=a*i;
+  document.write(i + " " + a + "<hr>");
+  }
+   document.write(a);
+
+
+///////////////////////////////////////////////////////////////////////// Sahmat 64 xana ilk 2 bugda ile
+
+   a=1
+b=0
+ // document.write("1 xanada" + "1 bugda var"  + "sonra " + "<hr>");
+for( i=1; i<=64; i++){
+
+ a=+ (a*2);
+ b= b+a;
+// b=a;
+// b=+b;
+  document.write(i + " " + a + " " + b  + "<hr>");
+  }
+   document.write(a + " " + b );
+
+
+
+
+
+</script>
+
+</body>
+</html>

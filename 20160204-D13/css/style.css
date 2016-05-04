@@ -1,0 +1,29 @@
+div{
+	border:1px solid gray;
+}
+
+.spaceVertical{
+	height: 10px;
+}
+
+.gnc-header{
+	height:100px;
+}
+.gnc-navbar{
+	height:35px;
+}
+.gnc-content{
+	height:150px;
+}
+
+.gnc-video{
+	height:150px;
+}
+
+.gnc-movzu{
+	height:150px;
+}
+
+.gnc-footer{
+	height:50px;
+}

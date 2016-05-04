@@ -1,0 +1,29 @@
+body{
+	font-size:18px;
+}
+.center{
+	margin: 0 auto;
+}
+.container{
+	width: 1300px;
+	display: flex;
+	border:1px solid red;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.container div{
+	width: 250px;
+	height: 150px;
+	background-color: gray;
+}
+.container div{
+	display:flex;
+	justify-content: space-around;
+
+}
+.container div div{
+	width:50px;
+	height:20px;
+	background:red;
+}

@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>navbar</title>
+ 
+  </head>
+
+
+<body>
+
+<script type="text/javascript">
+
+
+var navbar=["Ana Səhifə","Xəbərlər","Haqqimizda","Əlaqə","","",""];
+
+
+function menu(){
+document.write("<ul>");
+ 
+for(i=0;i<navbar.length;i++){
+document.write('<li style = "list-style-type: none;float: left; margin: 20px "> <a href="#">' + navbar[i] + '</a></li>');
+}
+
+document.write("</ul>");
+}
+
+menu();
+
+
+</script>
+
+</body>
+</html>

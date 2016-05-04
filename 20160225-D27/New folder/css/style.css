@@ -1,0 +1,23 @@
+.navbar{
+	width: 100px;
+	height: 100px;
+}
+.left{
+	float: left;
+}
+
+.kicik {
+	width: 50px;
+	height: 50px;
+border: 2px solid gray;
+}
+
+.boyuk{
+
+	width: 100%;
+	height: 550px;
+	border: 5px;
+	background: gray;
+	position: relative;
+
+}

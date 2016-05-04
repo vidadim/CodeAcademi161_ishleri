@@ -1,0 +1,15 @@
+.header {
+  width: 100%;
+  height: 100px;
+  background: #000099;
+}
+.navbar {
+  width: 100%;
+  height: 20px;
+  background: red;
+}
+.content {
+  width: 960px;
+  height: 100px;
+  background: green;
+}

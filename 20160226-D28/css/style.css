@@ -1,0 +1,100 @@
+html, body {
+	height: 100%;
+}
+
+.main{
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	background: red;
+}
+
+
+.logo{
+	width: 100%;
+	height: 3em;
+	background: blue;
+}
+
+.navbar{
+	width: 100%;
+	height: 5em;
+	background: red;
+
+}
+
+.navbar ul{
+	margin:0;
+	padding:0;
+}
+.navbar ul li{
+	line-height: 50px;
+	float:left;
+	list-style-type:none;
+	padding:0px 15px;
+	text-transform: uppercase;
+}
+
+
+
+
+.content{
+	width: 100%;
+	height: 30em;
+	background: green;	
+}
+
+.about{
+	width: 100%;
+	height: 30em;
+	background: yellow;	
+}
+
+
+.elaqe{
+	width: 100%;
+	height: 20em;
+	background: white;	
+}
+
+.linkler{
+	width: 100%;
+	height: 10em;
+	background: gray;	
+}
+
+
+
+
+
+
+
+
+
+.left{
+	float: left;
+}
+
+.kicik {
+	width: 10em;
+	height: 10em;
+border: 0.1em solid gray;
+}
+
+.hide{
+	display:none;
+}
+
+.active{
+	display:block !important;
+}
+
+
+// .boyuk{
+
+// 	width: 100%;
+// 	height: 550px;
+// 	border: 5px;
+// 	background: gray;
+// 	position: relative;
+// }

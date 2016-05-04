@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>digital-clock</title> 
+
+    <style type = "text/css">
+
+    body{
+        background: black;
+
+    }
+      #clock{
+          width: 600px;
+          height: 600px;
+          margin: 30px auto;
+          border-radius: 50%;
+          border: 17px dotted white;
+          background: blue;
+          color: #FFF;
+          text-align: center;
+          line-height: 600px; 
+          font-size: 100px;       
+      }
+
+    </style>
+
+  </head>
+
+<body>
+  <div id="clock">
+
+
+  <script type="text/javascript">
+      function getClock() {
+        var d = new Date();
+        var h = d.getHours();
+        var m = d.getMinutes();
+        var s = d.getSeconds();
+
+        var ampm="";
+
+        if (h>=12) {
+          ampm="PM";
+        }
+        else {
+          ampm="AM";
+        }
+
+        if (h>12) {
+          h=h-12;
+        }
+
+        if (h<10) {
+          h="0" + h;
+        }
+
+        if (m<10) {
+          m="0" + m;
+        }
+
+        if (s<10) {
+          s="0" + s;
+        }
+
+        document.getElementById('clock').innerHTML = h + ":" + m + ":" + s + " " + ampm;
+      }
+      setInterval(getClock, 1000);
+
+    
+  </script>
+  </div>
+
+</body>
+</html>

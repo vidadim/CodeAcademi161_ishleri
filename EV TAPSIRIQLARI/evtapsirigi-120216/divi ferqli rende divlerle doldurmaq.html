@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>bir divi ferqli renglerde divlerle doldurmaq</title>
+	
+</head>
+<body>
+
+<script>
+
+// 3.Browser ekranında mueyyen edilmiş bir divi ferqli renglerde divlerle doldurmaq.
+
+document.write("bir divi ferqli renglerde divlerle doldurmaq" + "<hr>");
+
+ function qutu(en,uzun,reng,margin,position,float){
+          document.write("<div style='width:"+en+";height:"+uzun+";background:"+reng+";margin:"+margin+";position:"+position+";float:"+float+"'></div>");
+     }
+     qutu("1200px","720px","gray","1px","absolute");
+
+     for (var i = 1; i<61; i++) {
+
+     	if(i<21&&i>0){
+     		qutu("100px","100px","blue","10px","relative","left");
+     	}
+
+     	if(i<41&&i>20){
+     		qutu("100px","100px","red","10px","relative","left");
+     	}
+
+     	if(i<61&&i>40){
+     		qutu("100px","100px","green","10px","relative","left");
+     	}
+     
+
+     	}
+
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    
+    <title>age calculator</title> 
+
+  </head>
+
+<body>
+ 
+<div> 
+
+  <form>
+    <fieldset> 
+
+    <legend> Doğumunuzdan keçən zaman </legend>
+
+    <p>  Dogum tarixinizi girin :  </p>
+
+    <input type="number" id="il"> - il ; </input>
+    <input type="number" id="ay"> - ay ; </input>
+    <input type="number" id="gun"> - gun ; </input>
+    <input type="button" onclick="hesabla()" value="HESABLA"></input>
+    </fieldset>
+  </form>
+
+  <p id="text"></p>
+
+<script type="text/javascript">
+
+  function days (date1,date2){
+    var oneDay=1000*60*60*24; //bir gunumuz milli saniye ile
+    var date1MilliSec = date1.getTime();
+    var date2MilliSec = date2.getTime();
+
+    var ferqMS=date2MilliSec-date1MilliSec;
+
+    ferqMS=ferqMS/1000;
+    var saniyeler=Math.floor(ferqMS%60);
+    ferqMS=ferqMS/60;
+    var deqiqeler=Math.floor(ferqMS%60);
+    ferqMS=ferqMS/60;
+    var saat=Math.floor(ferqMS%24);
+    var gunler = Math.floor(ferqMS/24);
+    var il = Math.floor(gunler/365);
+    var qaliqgun = gunler-il*365;
+
+    return il +" il "+qaliqgun+" gun, "+saat+" saat, "+ deqiqeler+" deqiqe, " + saniyeler+ " saniye";
+
+  }
+
+
+function hesabla()
+{
+  var il = document.getElementById("il").value;
+  var ay = (document.getElementById("ay").value)-1;
+  var gun = document.getElementById("gun").value;
+
+  var myBirthDay  = new Date(il, ay, gun);
+  var birthday = new Date(myBirthDay.getFullYear(), myBirthDay.getMonth(), myBirthDay.getDate());
+  var today= new Date();
+  
+  
+
+  document.getElementById("text").innerHTML=birthday + ' - ' + today + ': ' + days(birthday, today);
+  
+  
+}
+
+// setInterval(hesabla,1000)
+
+
+</script>
+
+</div>
+
+
+
+</body>
+</html>

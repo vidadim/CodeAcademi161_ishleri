@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>lesson20</title>
+ 
+  </head>
+
+
+<body>
+
+<style>
+
+  table{
+    border:1px solid gray;
+  }
+     td{
+      border:1px solid gray;
+      padding:10px 20px;  
+     }
+     tr:first-child{
+      background:red;
+     }
+
+</style>
+
+<script type="text/javascript">
+
+var sinif=[["Fira","Samedova", 15],["Maral","Memmedli",15],["Aysel","Mahammadova",15],["Kamran", "Kerimli", 44],["Vidad", "GəncƏli", 33],["Haydar","haydarli",22],["Lala","Nergizli",77]];
+
+ for(i=0;i<sinif.length;i++){
+  for (var j = 0; j < 3; j++) {
+  
+document.write(sinif[i][j]);
+}
+}
+
+
+
+function cedvel(a,b){
+  document.write("<table>");
+   document.write("<tr> <td>Ad</td> <td>Soyad</td> <td>Yaş</td></tr>");
+
+for(i=0;i<a;i++){
+  document.write("<tr>");
+        for(j=0;j<b;j++){
+          document.write("<td>"+sinif[i][j]+ "</td>");
+        }
+  document.write("</tr>");
+
+}
+document.write("</table>");
+}
+cedvel(10,3);
+
+
+      
+ for(k=0;k<sinif.length;k++){
+  for (var d = 0; d < 3; d++) {
+  
+document.write(sinif[k][d]);
+}
+}
+
+
+
+
+
+
+// var myArray=["Fira","Aysel","Maral","Orxan","Teymur","Mahammad","Kamran","GəncƏli","Haydar","Lala"];
+
+// for(i=0;i<10;i++){
+// document.write(myArray[i]+"<hr>");
+
+// }
+
+// var navbar=["Ana Səhifə","Xəbərlər","Haqqimizda","Əlaqə"];
+
+// document.write("<ul>");
+ 
+// for(i=0;i<navbar.length;i++){
+// document.write('<li style = "list-style-type: none;float: left; margin: 20px "> <a href="#">' + navbar[i] + '</a></li>');
+// }
+
+// document.write("</ul>");
+
+
+
+</script>
+
+</body>
+</html>

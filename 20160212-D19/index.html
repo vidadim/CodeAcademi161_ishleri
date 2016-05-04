@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>lesson19</title>
+ 
+  </head>
+
+
+<body>
+
+<!-- <div style="text-align: center;">
+<div>*</div>
+<div>**</div>
+<div>***</div>
+<div>**</div>
+<div>*</div>
+
+</div>
+ -->
+<script>
+
+function paxlava(a) {
+ 
+
+for(i=0;i<a;i++){
+
+      document.write('<div style="text-align: center;">')
+                    for(j=0;j<i;j++){
+                      document.write("*");
+                    }                    
+                     document.write('</div>' )
+
+                }
+
+
+for(i=a;i>0;i--){
+
+      document.write('<div style="text-align: center;">')
+                    for(j=1;j<i;j++){
+                      document.write("*");
+                    }                    
+                     document.write('</div>' )
+
+                }
+
+}
+
+paxlava(10);
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<script type="text/javascript">
+  var myDiv=document.createElement("div");
+  myP=document.createElement("p");
+  myDiv.setAttribute("class", "myDiv");
+
+  var myText=document.createTextNode("Simple text node");
+  myP.appendChild(myText);
+  myDiv.appendChild(myP);
+  document.body.appendChild(myDiv);
+  for (var i = 0; i < 4; i++) {
+    myDiv.appendChild(myP);
+  }
+
+</script>
+</body>
+</html>

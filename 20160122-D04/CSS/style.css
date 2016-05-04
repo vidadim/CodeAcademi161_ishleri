@@ -1,0 +1,56 @@
+body {
+	background-color: #FFF;
+}
+
+.main{
+	width: 900px;
+	border: 1px solid #000
+	
+}
+
+.header{
+	width: 100%;
+	background-color: pink;
+}
+
+.navbar{
+	width: 100%;
+	background-color: blue;
+}
+
+.slider{
+	width: 100% ;
+	height: 300px;
+	background-color: gray;
+}
+
+.content {
+	width: 100%;
+	background-color: black;
+}
+
+	.contentLeft{
+	width: 300px;
+	background-color: green;
+	float: left
+	}
+
+	.contentMiddle{
+		width: 300px;
+		background-color: red;
+		float: left
+	}
+
+	.contentRight {
+		width: 300px;
+		background-color: purple;
+		float: left
+	}
+
+
+.footer{
+	
+	width: 100%;
+	clear: both;
+	background-color: yellow;
+}

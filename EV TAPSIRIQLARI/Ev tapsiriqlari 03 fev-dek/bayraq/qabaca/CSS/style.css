@@ -1,0 +1,40 @@
+/* Azərbaycan Respublikasının Dövlət bayrağı bərabər enli üç üfüqi zolaqdan ibarətdir. 
+Yuxarı zolaq mavi, orta zolaq qırmızı, aşağı zolaq yaşıl rəngdədir */
+
+/*-------------3 üfiqi zolaq ---------------*/
+.flag{
+width:600px; 
+height:100px;
+border-top:100px solid #00b5e2;
+border-bottom:100px solid #509e2f;
+background:#ef3340;
+}
+
+/*------------- Ay ---------------*/
+.moon {
+width: 100px;
+height: 90px;
+border-radius: 90px;    
+box-shadow: 25px 0px #fff;
+transform: rotate(180deg);
+margin-top: -213px;
+margin-left: 260px;
+}
+
+/*------------- 8 guşəli ulduz---------------*/
+.star {
+background: #fff;
+width: 38px;
+height: 38px;
+position: relative;
+margin-top: -80px;
+margin-left: 314px;
+}
+.star:before {
+content: "";
+position: absolute;
+height: 38px;
+width: 38px;
+background: #fff;
+transform: rotate(135deg);
+}

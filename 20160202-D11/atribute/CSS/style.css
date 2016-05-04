@@ -1,0 +1,103 @@
+.content{
+	width: 1000px;
+	margin:0 auto;
+}
+
+.square{
+	width: 50%;
+	height: 500px;
+}
+.fullWidth{
+	width: 95%;
+}
+.block-75{
+	width: 75%;
+}
+.block-25{
+	width: 25%;
+}
+.margin{
+	margin:10px;
+}
+.square-xs{
+	width: 220px;
+	height: 220px;
+}
+.rect-m{
+	height: 250px;
+}
+.rect-s{
+	height: 250px;
+}
+.floatLeft{
+	float: left;
+}
+
+.border{
+	border: 1px solid red;
+	box-sizing: border-box;
+}
+
+a[target="_blank"]{
+	font-weight: bold;
+	color: red;
+}
+
+.contentLeft{
+	width: 400px;
+	height: 250px;
+	background-color: #454545;
+}
+
+.contentMiddle{
+	width: 350px;
+	height:250px; 
+	background-color: #393939;
+}
+
+.contentRight{
+	width: 250px;
+	height: 250px;
+	background-color: aqua;
+}
+
+.footerLeft{
+	width: 500px;
+	height: 150px;
+	background-color: #d0d0d0;
+}
+
+.footerMiddle{
+	width:350px;
+	height: 150px;
+	background-color: #ddd999;
+}
+.footerRight{
+	width: 250px;
+	height: 150px;
+	background-color: #fff333;
+}
+
+.content,.footer{
+	width: 100%;
+	height: 300px;
+}
+
+.clearFix{
+	clear: both;
+}
+
+[class*="Left"],[class*="Middle"]{
+	float: left;
+	border:1px solid red;
+}
+[class*="Right"]{
+	float: right;
+	border: 1px solid red;
+}
+[class^="content"]{
+	box-shadow: 0px 0px 10px 10px purple; 
+}
+[class^="footer"]{
+	box-shadow: 0px 0px 10px 10px #d7f000;
+}

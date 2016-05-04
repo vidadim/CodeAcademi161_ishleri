@@ -1,0 +1,88 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+
+/*------------ common class----------*/
+
+.fullWidth{
+	width: 100%;
+	height: auto;
+}
+
+.heightAuto{
+	height: auto;
+}
+
+.marginAuto{
+	margin: 0 auto;
+}
+
+.araVer{
+	clear: both;
+	width: 100%;
+	height: 20px;
+}
+
+.floatLeft{
+	float: left;
+}
+
+.floatRight{
+	float: right;
+}
+
+/* ------------ main classes ------------ */
+
+body{
+	background: #fff;
+}
+
+.main{
+	width: 100%;
+	background: #fff;
+
+}
+
+.header{
+	background: blue;
+}
+	
+.navbar{
+	background: red;
+}
+	
+.video1{
+	width: 49%;
+	background: green;
+}
+
+.video2{
+	width: 49%;
+	background: green;
+}
+
+.content1{
+	width: 33%;
+	background: gray;
+}
+
+.content2{
+	width: 33%;
+	background: gray;
+	margin-left: 0.5%;
+	margin-right: 0.5%;
+
+}
+
+.content3{
+	width: 33%;
+	background: gray;
+}
+
+.footer{
+	background: yellow;
+}
+

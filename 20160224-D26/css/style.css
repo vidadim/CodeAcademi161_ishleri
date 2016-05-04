@@ -1,0 +1,38 @@
+.shape{
+	border: 2px solid black;
+	height: 80px;
+	width: 80px;
+}
+
+.shape span{
+	text-align: center;
+	line-height: 80px;
+	color: white;
+}
+
+.circle{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+}
+
+.rec{
+	width: 130px;
+	height: 80px;
+}
+
+.red{
+	background-color: red;
+}
+
+.blue{
+	background-color: blue;
+}
+
+.green{
+	background-color: green;
+}
+
+.yellow{
+	background-color: yellow;
+}

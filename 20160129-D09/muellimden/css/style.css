@@ -1,0 +1,27 @@
+.main{
+	width:800px;
+	height:600px;
+	background:gray;
+}
+.main div:nth-child(1),div:nth-child(2){
+	width:300px;
+	height:200px;
+	display:inline-block;
+	margin:50px 10px;
+	background:lightgray;
+
+}
+.main div:nth-child(1){
+	display:none;
+}
+.main div:nth-child(1):hover +  div:nth-child(2){
+	background:brown;
+}
+.main:hover> div:nth-child(2){
+	background:red;
+
+}
+.main:hover> div:nth-child(1){
+	display:block;
+
+}

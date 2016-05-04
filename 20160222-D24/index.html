@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>digital-clock</title> 
+<!-- 
+    <style type = "text/css">
+
+    body{
+        background: black;
+
+    }
+     /* #clock{
+          width: 600px;
+          height: 600px;
+          margin: 30px auto;
+          border-radius: 50%;
+          border: 17px dotted white;
+          background: blue;
+          color: #FFF;
+          text-align: center;
+          line-height: 600px; 
+          font-size: 100px;       
+      }*/
+
+    </style>
+
+   --></head>
+
+<body>
+ 
+<div id="clock"> </div>
+
+  <script type="text/javascript">
+
+var birthday = new Date("5/28/1918");
+var today = new Date();
+var years = today.getFullYear() - birthday.getFullYear();
+
+// Reset birthday to the current year.
+birthday.setFullYear(today.getFullYear());
+
+// If the user's birthday has not occurred yet this year, subtract 1.
+if (today < birthday)
+{
+    years--;
+}
+
+
+      function getClock() {
+        var d = new Date();
+        var h = d.getHours();
+        var m = d.getMinutes();
+        var s = d.getSeconds();
+
+        var ampm="";
+
+        if (h>=12) {
+          ampm="PM";
+        }
+        else {
+          ampm="AM";
+        }
+
+        if (h>12) {
+          h=h-12;
+        }
+
+        if (h<10) {
+          h="0" + h;
+        }
+
+        if (m<10) {
+          m="0" + m;
+        }
+
+        if (s<10) {
+          s="0" + s;
+        }
+
+        // document.write("You are " + years + " years old.");
+
+// Output: You are <number of years> years old.
+
+        document.getElementById('clock').innerHTML = years+ " - il <br>" + h + " - saat <br>" + m + " - dəqiqə <br>" + s + " - saniyə <br>" + "yaşayırsan";
+      }
+      setInterval(getClock, 1000);
+
+    
+  </script>
+
+
+</body>
+</html>

@@ -1,0 +1,179 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+/*	transition:all .5s ease;*/
+}
+
+/* ------------ common classes ------------ */
+
+.fullBox{
+	width:100%;
+	height:auto;
+}
+.pullRight{
+	float:right;
+}
+.pullLeft{
+	float:left;
+}
+.colorRed{
+	background:darkred;
+	color:white;
+}
+.colorWhite{
+	background:white;
+	color:darkred;
+}
+.verticalSpace{
+	width:100%;
+	height:10px;
+}
+.clearFix{
+	clear:both;
+}
+.btn{
+	margin-top:18px;
+	padding:0 10px;
+	line-height: 40px;
+	color:darkred;
+	height:40px;
+	background:white;
+	border:1px solid lightgray;
+}
+.box{
+	width:100%;
+	height:140px;
+	background:white;
+	margin-bottom:10px;
+
+}
+.marginRight10{
+	margin-right: 10px;
+}
+/* ------------ main classes ------------ */
+body{
+	background:darkred;
+	font-size:16px;
+	font-family:Calibri;
+	color:white;
+}
+input{
+	padding:10px 20px;
+	height:40px;
+	font-size:.8em;
+}
+.fullBox{
+	width:100%;
+	height:auto;
+}
+.centeredSection{
+	margin:0 auto;
+}
+
+.mainWrapper{
+	width:960px;
+}
+.header{
+	height:75px;
+	line-height:75px;
+}
+.header div{
+	margin-right:10px;
+}
+.user{
+	color:darkred;	
+}
+
+.user > .fa-user{
+	background:white;
+	padding:12px;
+}
+.user span{
+	color:white;
+}
+.searchBox input{
+	width:350px;
+	background-image: url(../images/search.png);
+	background-repeat: no-repeat;
+	background-size: 20px;
+	background-position: 310px center;
+	padding-right:50px;
+	border-radius:5px;
+}
+.searchBox input:focus{
+	border:1px solid darkred;
+	box-shadow:0px 0px 10px darkred inset;
+}
+.logo{
+	font-size:1.5em;
+	line-height: 75px;
+	padding-right:10px;
+}
+.upload > .btn i{
+  margin-right:10px;
+}
+.navbar{
+	height:40px;
+	border:1px solid white;
+	border-left:none;
+	border-right:none;
+}
+.navbar ul{
+	margin:0;
+	padding:0;
+}
+.navbar ul li{
+	float:left;
+	list-style: none;
+	line-height: 40px;
+	padding:0 10px;
+}
+.navbar ul li:after{
+	content:" / ";
+	margin-left:20px;
+}
+.navbar ul li:last-child:after{
+	content:"";
+}
+.navbar ul li:first-child{
+	padding-left:0px;
+}
+.videoSection{
+
+}
+.leftVideo{
+	width:630px;
+	
+}
+.mainVideo{
+	width:420px;
+	float:left;
+	
+}
+.secondaryVideo{
+	width:200px;
+	float:right;
+	margin-right: 10px;
+	
+}
+.rightVideo{
+	width:320px;
+	border:1px solid white;
+}
+.featuredVideo{
+	width:410px;
+	height:290px;
+
+}
+.relatedVideo div{
+	width:200px;
+}
+.contentSection{
+	
+}
+.footer{
+	border-top:1px solid white;
+	height:75px;
+}
+

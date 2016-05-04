@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+   <title></title>
+   <style>
+   ul{
+      margin:0;
+      padding:0;
+      background-color:gray;
+      margin-bottom:10px;
+   }
+   ul li{
+      list-style:none;
+      background:gray;
+      color:white;
+      display:inline-block;
+      padding:10px 20px;
+      line-height:40px;
+      vertical-align:middle;
+      cursor:pointer;
+      }
+
+   </style>
+</head>
+<body>
+
+<script type="text/javascript">
+   
+   // function createNavbar(link1,link2,link3,link4){
+   //    document.write("<ul><li>"+link1+"</li><li>"+link2+"</li><li>"+link3+"</li><li>"+link4+"</li></ul>");
+   // }
+   // createNavbar("Ana Sehife","Haqqımızda","İşlerimiz","Elage");
+   // createNavbar("link1","link2","link3","link4");
+   // ==,!=,<,>,<=,>=
+/////////////////////////////////////////////////////////////////////////
+   // var a=5;
+
+   // if(a!=5){
+      
+   //    document.write("Sert dogrudur heciii..");
+
+   // }else{
+   //    document.write("Sert sehvdir heciii..");
+   // }
+/////////////////////////////////////////////////////////////////////////
+      // var a=5;
+
+ //   if(false){
+      
+ //      document.write("Sert dogrudur heciii..");
+
+ //   }else{
+ //      document.write("Sert sehvdir heciii..");
+ //   }
+/////////////////////////////////////////////////////////////////////////
+//  function cut(a){
+//    var qaliq=a%2;
+//    if(qaliq==0){
+//       document.write(a+" ededi cüt ededdir")
+//    }else{
+//       document.write(a+" ededi tek ededdir")
+//    }
+
+//  }
+// cut(0);
+
+
+/////////////////////////////////////////////////////////////////////////
+function bol(a,b){
+   var qaliq=a%b;
+   if(qaliq==0){
+      document.write(a+" ededi " + b + "ededine tam bolunur")
+   }else{
+      document.write(a+" ededi " + b + "ededine " + qaliq + " qaliq ile bolunur ")
+   }
+
+ }
+bol(11,3);
+
+
+/////////////////////////////////////////////////////////////////////////
+
+
+// function netice(a){
+
+   
+//    if(a<0){
+//       document.write("olmaz")
+//    }
+//    else if(a<50){
+//       document.write("kesildiniz")
+//    }
+//    else if(a<70) {
+//       document.write(" pis deyilsiniz")
+//    }
+
+//     else if(a<100) {
+//       document.write(" Eladir'")
+//    }
+//     else if(a>100) {
+//       document.write(" nagayrirsan eeee ucdunki ")
+//    }
+
+
+
+//  }
+// netice(0);
+
+/////////////////////////////////////////////////////////////////////////
+
+
+function netice(a){
+   
+   if(a<0){
+      document.write("olmaz")
+   }
+   else { 
+            if(a<50){
+                      document.write("kesildiniz")
+                    }
+     
+             else {
+                      if(a<70) {
+                                  document.write(" pis deyilsiniz")
+                                }
+                      else { 
+                              if(a<100) {
+                                document.write(" Eladir'")
+                                        }
+                               else { 
+
+                                if(a>100) {
+                                        document.write(" nagayrirsan eeee ucdunki ")
+                                          }
+                                    }
+                            }
+                 }
+            }
+      }
+
+
+netice(101);
+
+/////////////////////////////////////////////////////////////////////////
+
+a=0
+function netice(){
+                  
+                  if(a<501)
+                  {a++;
+                  document.write(a + "<hr>" );
+                    netice();}                    
+                  }
+
+
+netice();
+
+
+/////////////////////////////////////////////////////////////////////////
+
+a=1;
+function sadizm(){
+   if(a<501){
+      if(a%7==0){
+         document.write(a+"<hr>");
+      }
+   
+   a++;
+   sadizm();
+   }
+}
+sadizm();
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <style>
+
+  table{
+    border:1px solid gray;
+  }
+     td{
+      border:1px solid gray;
+      padding:10px 20px;  
+     }
+     tr:first-child{
+      background:red;
+     }
+
+
+  </style>
+</head>
+<body>
+
+<script>
+
+
+function cedvel(a,b){
+  document.write("<table>");
+for(i=0;i<a;i++){
+  document.write("<tr>");
+        for(j=0;j<b;j++){
+          document.write("<td>"+i+" inci setir"+j+ " inci sütun</td>");
+        }
+  document.write("</tr>");
+
+}
+document.write("</table>");
+}
+cedvel(10,5);
+
+
+/////////////////////////////////////////////////
+
+function paxlava(a) {
+ 
+
+for(i=0;i<a;i++){
+
+      document.write('<div style="text-align: center;">')
+                    for(j=0;j<i;j++){
+                      document.write("*");
+                    }                    
+                     document.write('</div>' )
+
+                }
+
+
+for(i=a;i>0;i--){
+
+      document.write('<div style="text-align: center;">')
+                    for(j=1;j<i;j++){
+                      document.write("*");
+                    }                    
+                     document.write('</div>' )
+
+                }
+
+}
+
+paxlava(10);
+
+
+
+</script>
+</body>
+</html>

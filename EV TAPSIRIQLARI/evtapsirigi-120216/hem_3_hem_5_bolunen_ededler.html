@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>3 ve 5 bolunen ededler</title>
+    
+  </head>
+
+<body>
+
+<script type="text/javascript">  
+
+document.write("1-200 arasında hem 3-e hem 5-e bolunen ededler"+"<hr>");
+
+
+for(j=1; j<201; j++){
+	if(j%5==0&&j%3==0){
+		document.write(j+"</br>");
+		 }
+}
+
+// İkinci varyantda 
+document.write("<hr>"+"<hr>"+"ikinci varyantda" +"<hr>"+"<hr>");
+
+for(j=1; j<201; j++){
+	if(j%5==0){
+		if(j%3==0){
+			document.write(j+"  ");
+			}
+		
+		}
+}
+
+</script>
+
+</body>
+</html>
